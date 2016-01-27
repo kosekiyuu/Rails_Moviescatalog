@@ -1,0 +1,33 @@
+
+<%= video_tag(URI.escape("/videos/#{@movie.file_name}"), :width => 550, :controls => true, :autobuffer => false) %>
+
+<table border=0 word-break="break-all" width="540px" cellspacing="8" >
+    <tr><th colspan=7 style="color:#4169E1; font-size:18px;"><%= @movie.movie_title %></th></tr>
+
+    <tr><th colspan=7><%= @movie.created_at.strftime("%Y/%m/%d %H:%M:%S") %></th></tr>
+
+    <tr><td style='text-align:right;'>投稿者:</td><th style='text-align:left;'><%= @movie.contributor %></th>
+            <td style='text-align:right;'>再生時間:</td><th style='text-align:left;'><%= Movie.new.timespan(@movie.duration) %></th>
+            <td style='text-align:right;'>再生回数:</td><th style='text-align:left;'><%= @movie.play_counts %></th></tr>
+
+    <tr><th colspan=7 width="350px">
+        <%= raw @movie.tag_list.map { |t| link_to t, tag_path(t),:style=>"color:#006400; font-size:15px;" }.join(' ') %>
+    </th></tr>
+
+    <tr ><td colspan=2 style='text-align:right;'>投稿者コメント:</td><th colspan=5 width="350px"><%= @movie.contributor_comment %></th></tr>
+
+    <tr><th colspan=7>
+        <% if user_signed_in? %>
+
+            <%= link_to '動画タグ編集', tag_edit_movie_path(@movie), :id=>"movie_edit_link" %>
+
+            <% if (@movie.contributor == current_user.contributor) %>
+                <%= link_to '動画情報を編集', edit_movie_path(@movie), :id=>"movie_edit_link" %>
+                <%= link_to '動画を削除', movie_path(@movie), {:confirm=>"動画を削除してもよろしいですか？", :method=>:delete, :id=>"movie_edit_link"} %>
+            <% end %>
+
+        <% end %>
+    </th></tr>
+
+</table>
+

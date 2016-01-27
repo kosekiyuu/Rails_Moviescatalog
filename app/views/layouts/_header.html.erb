@@ -1,0 +1,59 @@
+<div id="header">
+    <table border=0>
+        <tr>
+            <td rowspan=5 valign="top">
+                <h1 style="display: inline; vertical-align:-10px;">Movies Catalog</h1>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <% if user_signed_in? %>
+                    ユーザー名 <strong><%= current_user.contributor %></strong> |
+                    <%= link_to 'トップページ', movies_path %> |
+                    <%= link_to '新規動画投稿', new_movie_path %> |
+                    <%= link_to 'あなたの投稿動画とプロフィール', contributor_path %> |
+                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                <% else %>
+                    <%= link_to 'トップページ', movies_path %> |
+                    <%= link_to "新規ユーザー登録", new_user_registration_path %> |
+                    <%= link_to "ログイン", new_user_session_path %>
+                <% end %>
+            </td>
+        </tr>
+
+        <tr><td colspan=2></td></tr>
+        <tr><td colspan=2></td></tr>
+
+        <tr>
+            <td></td>
+            <td text-align="left">
+            <%= form_tag(movies_path , {:method=>:get, :style=>'display: inline', :id=>"search_word_form"}) do %>
+                <label>検索対象
+                <%= select_tag('search_column', options_for_select({
+                    'キーワード' => 'all',
+                    'タグ' => 'tags',
+                    }, params[:search_column] ), :id=>'search_keyword_tag')%>
+                </label>
+
+                <label>表示順序
+                <%= select_tag('search_result_sort', options_for_select({
+                    '検索ワードの適合度' => 0,
+                    '投稿日時が新しい順' => 1,
+                    '投稿日時が古い順' => 2,
+                    '再生回数' => 3,
+                    '再生時間の長い順' => 4,
+                    '再生時間の短い順' => 5,
+                    'お気に入り登録回数' => 6,
+                    }, params[:search_result_sort] ), :id=>'search_sort')%>
+                </label>
+
+                <%= search_field_tag 'search_query', params[:search_query], :id=>'search_word' %>
+                <%= submit_tag '検索', :id=>'search_start' %>
+            <% end %>
+            </td>
+        </tr>
+    </table>
+
+    <font size="5" color="#008000"><%= notice %></font>
+    <font size="5" color="#ff0000"><%= alert %></font>
+</div>

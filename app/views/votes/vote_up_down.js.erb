@@ -1,0 +1,3 @@
+$("#vote_status").replaceWith("<%= escape_javascript(
+    render :partial => 'votes/vote_status', :locals => {:movie => @movie, :vote => @vote}
+    )%>");

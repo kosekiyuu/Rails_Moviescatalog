@@ -1,0 +1,22 @@
+
+//alert("クリックしました");
+$('#view_more').replaceWith("<%= escape_javascript(
+    render :partial => 'movies/movieslist_pagination', :locals => {:movies => @movies, :turnning => false}
+    )%>");
+
+
+$(window).on("scroll", function() {
+var scrollHeight = $(document).height();
+var scrollPosition = $(window).height() + $(window).scrollTop();
+if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+
+        $('#kaminari_next_page').trigger('click');
+        //alert("スクロールしました");
+        sleep(100);
+
+}
+});
+
+
+
+

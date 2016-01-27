@@ -1,0 +1,22 @@
+
+
+<table border="0" width="100%">
+<tr><td width="510px" valign="top">
+
+    <%= render 'movies/movieplay',:locals => {:movie=> @movie, :tags => @tags} %>
+
+
+    <%= render :partial => "votes/vote_status", :locals => {:movie => @movie, :vote => @vote} %>
+
+    <%=render :partial => 'comments/index',:locals => {:commentable=> @movie, :comments => @comments} %>
+    <%= render :partial => "comments/new", :locals => {:commentable => @movie} %>
+
+</td>
+<td width="20px" valign="top"></td>
+<td width="590px" valign="top">
+
+    <%= render :partial => 'movies/movieslist_pagination', :locals => {:movies => @movies, :turnning => true} %>
+
+</td></tr>
+</table>
+

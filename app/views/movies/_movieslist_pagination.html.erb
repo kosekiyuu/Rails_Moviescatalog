@@ -1,0 +1,26 @@
+
+
+<%= render :partial => 'movies/movieslist', :locals => {:movies => movies, :turnning => turnning} %>
+
+
+<div id="view_more">
+    <b>
+    <%= movies.total_count %>件中
+    <%= 1 %>〜<%= movies.offset_value + movies.length %>件を表示しています。
+    </b>
+    <br>
+
+    <% unless movies.last_page? %>
+        <%= link_to(image_tag(URI.escape("/images/more_movies_arrow.png"), :width => 250),
+            {:url => movies_path,
+            :search_query => params[:search_query],
+            :search_column => params[:search_column],
+            :search_result_sort => params[:search_result_sort],
+            :page => movies.next_page},
+            {:remote => true,
+            :id => 'kaminari_next_page',
+            data: {disable_with: 'loading...'}
+            }
+            ) %>
+    <% end %>
+</div>
