@@ -1,0 +1,14 @@
+
+<div class="wrap">
+      <% tags_grouping.each do |x| %>
+        <div class="box">
+        <div class="field">
+        <label>
+            <%= x %><%= check_box_tag "tag_check_box_list[]", "#{x}", check_true_false, :id => 'tag_check_box' %>
+        </label>
+        </div>
+        </div>
+      <% end %>
+</div>
+
+

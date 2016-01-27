@@ -1,0 +1,27 @@
+aaa:
+  id: 6
+  commentable_id: 2
+  commentable_type: Movie
+  title:
+  body: "コメントよろしくお願いします。"
+  subject:
+  user_id: 1
+  parent_id:
+  lft: 1
+  rgt: 2
+  created_at: 2014-02-06 09:04:47 +0900
+  updated_at: 2014-02-06 09:04:47 +0900
+
+bbb:
+  id: 7
+  commentable_id: 2
+  commentable_type: Movie
+  title:
+  body: "SQL直接ベタ書きは面倒ですからね。オブジェクトとして扱えるのは便利ですよね。"
+  subject:
+  user_id: 2
+  parent_id:
+  lft: 3
+  rgt: 4
+  created_at: 2014-02-06 10:29:36 +0900
+  updated_at: 2014-02-06 10:29:36 +0900

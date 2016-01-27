@@ -1,0 +1,9 @@
+
+//alert("クリックしました");
+$('#ajax_tag_update').html("<%= escape_javascript(
+    render(:partial => 'movies/tag_edit_tag_group_box', :locals => {:tags_grouping => @recommended_tags, :check_true_false => false})
+    )%>");
+
+$('#ajax_already_attached_tag').html("<%= escape_javascript(
+    render(:partial => 'movies/tag_edit_tag_group_box', :locals => {:tags_grouping => @tags_already_checked, :check_true_false => true})
+    )%>");

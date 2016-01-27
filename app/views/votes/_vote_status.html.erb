@@ -1,0 +1,83 @@
+
+<div id='vote_status'>
+<% if current_user %>
+
+    <table border=0>
+        <tr><td width='580px' colspan=6><hr></td></tr>
+        <td width='170px'><br><br><br><br><br></td>
+
+        <td>
+        <div id="like_vote_count">
+        <%= @vote[:vote_like_count] %>
+        </div>
+        </td>
+
+        <td>
+        <% if @vote[:vote_user_like].blank? %>
+                <div id="like_dislike_not_voted">
+        <% else %>
+                <div id="like_dislike_already_voted">
+        <% end %>
+                <%= link_to    image_tag(URI.escape("/images/like.png"), :width => 50),
+                    movie_vote_up_down_path(@movie, :vote_up_down => "vote_up"), :remote => true, :id => 'like_vote', :method => :post %>
+        </div>
+        </td>
+
+        <td>
+        <% if @vote[:vote_user_dislike].blank? %>
+                <div id="like_dislike_not_voted">
+        <% else %>
+                <div id="like_dislike_already_voted">
+        <% end %>
+                <%= link_to    image_tag(URI.escape("/images/dislike.png"), :width => 50),
+                    movie_vote_up_down_path(@movie, :vote_up_down => "vote_down"), :remote => true, :id => 'dislike_vote', :method => :post %>
+        </div>
+        </td>
+
+        <td>
+        <div id="dislike_vote_count">
+        <%= @vote[:vote_dislike_count] %>
+        </div>
+        </td>
+
+        <td width='170px'><br><br><br><br><br></td>
+        <tr><td width='580px' colspan=6><hr></td></tr>
+    </table>
+
+<% else %>
+
+    <table border=0>
+        <tr><td width='580px' colspan=6><hr></td></tr>
+        <td width='170px'><br><br><br><br><br></td>
+
+        <td>
+        <div id="like_vote_count">
+        <%= @vote[:vote_like_count] %>
+        </div>
+        </td>
+
+        <td>
+        <div id="like_dislike_not_voted">
+                <%= link_to image_tag(URI.escape("/images/like.png"), :width => 50), new_user_session_path, :confirm=>"投票するにはログインが必要です。ログインしますか？" %>
+        </div>
+        </td>
+
+        <td>
+        <div id="like_dislike_not_voted">
+                <%= link_to image_tag(URI.escape("/images/dislike.png"), :width => 50), new_user_session_path, :confirm=>"投票するにはログインが必要です。ログインしますか？" %>
+        </div>
+        </td>
+
+        <td>
+        <div id="dislike_vote_count">
+        <%= @vote[:vote_dislike_count] %>
+        </div>
+        </td>
+
+        <td width='170px'><br><br><br><br><br></td>
+        <tr><td width='580px' colspan=6><hr></td></tr>
+    </table>
+
+<% end %>
+</div>
+

@@ -1,0 +1,53 @@
+
+<% if turnning %>
+    <% rowcol = 'colspan=9' %>
+    <% newline = '</tr><tr>' %>
+<% else %>
+    <% rowcol = 'rowspan=4' %>
+    <% newline = '' %>
+<% end %>
+
+
+<% movies.each do |movieslist| %>
+    <table border=0 style="word-break: break-all;">
+        <tr><td width="580" <%= rowcol %>>
+                <div style="position: relative;">
+                        <% 5.times do |thumbnails_count| %>
+                        <%= link_to image_tag(URI.escape("/images/thumbnails/#{File.basename(movieslist.file_name, '.mp4')}_#{thumbnails_count}.jpg"), :width => 110 ), movie_path(movieslist) %>
+                        <% end %>
+
+                        <div id="duration" style="position:absolute; top:60px; left:495px; width: 70px;">
+                                <%= link_to Movie.new.timespan(movieslist.duration), movie_path(movieslist), {:height=>0} %>
+                        </div>
+                </div>
+                </td>
+
+                <%= raw(newline) %>
+
+                <th colspan=9 width="580" >
+                    <%= link_to movieslist.movie_title, movie_path(movieslist),:style=>"color:#4169E1; font-size:16px;" %>
+                </th></tr>
+        <tr>
+                <th><%= movieslist.created_at.strftime("%Y/%m/%d %T") %></th>
+                <td style='text-align:right;'>投稿者 : </td><th style='text-align:left;'><%= movieslist.contributor %></th>
+                <td style='text-align:right;'>評価 : </td><th style='text-align:left;'><%= movieslist.rating %></th>
+                <td style='text-align:right;'>再生回数 : </td><th style='text-align:left;'><%= movieslist.play_counts %></th>
+        </tr>
+
+        <tr><th colspan=9 width="580" style="color:#808080; font-size:12px;">
+            <%= truncate(movieslist.contributor_comment, {:length => 45}) %>
+        </th></tr>
+
+        <tr><th colspan=9 width="580">
+            <%= raw movieslist.tag_list.sort!.map { |t| link_to t, tag_path(t),:style=>"color:#006400; font-size:13px;" }.join(' ') %>
+        </th></tr>
+
+    </table>
+    <hr>
+<% end %>
+
+
+
+
+
+

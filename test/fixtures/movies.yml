@@ -1,0 +1,391 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+0:
+  id: 2
+  file_name: 'Active Record Just in Time SQL Queries (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Active Record Just in Time SQL Queries (HD).mp4'
+  file_basename: 'Active Record Just in Time SQL Queries (HD)'
+  movie_title: 'ActiveRecordの解説'
+  contributor: 'mamama'
+  contributor_comment: 'SQLを通じてActiveRexordの使用方法を説明しています。'
+  rating: 5
+  play_counts: 110
+  size: 36106737
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Active Record Just in Time SQL Queries (HD).mp4'
+  duration: 529.95
+  creation_time: 2014-01-08 00:06:42 +0900
+  bitrate: 545
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 350
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 08:57:42 +0900
+  updated_at: 2014-02-08 11:59:13 +0900
+
+1:
+  id: 3
+  file_name: 'Rails Asset Pipeline - YouTube.mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Rails Asset Pipeline - YouTube.mp4'
+  file_basename: 'Rails Asset Pipeline - YouTube'
+  movie_title: 'RailsにおけるAssetsPipelineの解説'
+  contributor: 'mamama'
+  contributor_comment: 'RailsでCSS(stylesheet)や画像を用いる際にはAssetsPieplineの概念が必要となります。本動画はその解説です。'
+  rating: 2
+  play_counts: 14
+  size: 75157317
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Rails Asset Pipeline - YouTube.mp4'
+  duration: 1222.14
+  creation_time: 2012-07-17 21:40:16 +0900
+  bitrate: 491
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 297
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 09:01:13 +0900
+  updated_at: 2014-02-06 16:43:18 +0900
+
+2:
+  id: 4
+  file_name: 'Using Modules in Ruby - YouTube.mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Using Modules in Ruby - YouTube.mp4'
+  file_basename: 'Using Modules in Ruby - YouTube'
+  movie_title: 'RubyにおけるModuleの意味と使用方法'
+  contributor: 'mamama'
+  contributor_comment: 'Rubyには単一継承のClassがありますが、これとは別に単一継承以上に共通する機能を組み込みたい場合などのためにModuleが存在します。本動画ではこれについて解説します。'
+  rating: 1
+  play_counts: 30
+  size: 24699004
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Using Modules in Ruby - YouTube.mp4'
+  duration: 426.04
+  creation_time: 2012-08-01 16:51:18 +0900
+  bitrate: 463
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 269
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 09:11:08 +0900
+  updated_at: 2014-02-09 18:02:04 +0900
+
+3:
+  id: 5
+  file_name: 'Time to Move Away from Ruby Matt Aimonetti - YouTube.flv'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Time to Move Away from Ruby Matt Aimonetti - YouTube.flv'
+  file_basename: 'Time to Move Away from Ruby Matt Aimonetti - YouTube'
+  movie_title: 'Matt Aimonettiによる講演'
+  contributor: 'mamama'
+  contributor_comment: ''
+  rating: 1
+  play_counts: 6
+  size: 47667477
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Time to Move Away from Ruby Matt Aimonetti - YouTube.flv'
+  duration: 1712.78
+  creation_time:
+  bitrate: 222
+  video_codec: 'flv1'
+  colorspace: 'yuv420p'
+  video_bitrate: 153
+  resolution: '426x240'
+  audio_codec: 'mp3'
+  audio_channels: '1'
+  audio_bitrate: 65
+  audio_sample_rate: 22050
+  created_at: 2014-02-06 09:13:19 +0900
+  updated_at: 2014-02-06 09:29:09 +0900
+
+4:
+  id: 6
+  file_name: 'Ruby Class _ Instance Methods - YouTube.mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Ruby Class _ Instance Methods - YouTube.mp4'
+  file_basename: 'Ruby Class _ Instance Methods - YouTube'
+  movie_title: 'RubyでのClassとInstanceMethodについて'
+  contributor: 'mamama'
+  contributor_comment: 'RubyではClassが存在し、ClassよりInstanceMethodを生成することで、各種処理を実行します。本動画はその解説です。'
+  rating: 5
+  play_counts: 1
+  size: 24698484
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Ruby Class _ Instance Methods - YouTube.mp4'
+  duration: 502.34
+  creation_time: 2012-07-17 21:13:34 +0900
+  bitrate: 393
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 198
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 09:31:22 +0900
+  updated_at: 2014-02-06 09:31:22 +0900
+
+5:
+  id: 7
+  file_name: 'Rails Cookies and Session - YouTube.mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Rails Cookies and Session - YouTube.mp4'
+  file_basename: 'Rails Cookies and Session - YouTube'
+  movie_title: 'RailsにおいてCookieの情報をやり取りする方法'
+  contributor: 'mamama'
+  contributor_comment: 'Railsでクライアント側で情報を保持するときはCookieを用いるわけで、この情報のやり取りを解説する。'
+  rating: 3
+  play_counts: 4
+  size: 17662462
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Rails Cookies and Session - YouTube.mp4'
+  duration: 303.81
+  creation_time: 2012-08-12 22:07:55 +0900
+  bitrate: 465
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 270
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 10:19:42 +0900
+  updated_at: 2014-02-06 11:01:54 +0900
+
+6:
+  id: 8
+  file_name: 'Hertzsprung-Russell HR Diagrams - Astronomy at West - Stars (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Hertzsprung-Russell HR Diagrams - Astronomy at West - Stars (HD).mp4'
+  file_basename: 'Hertzsprung-Russell HR Diagrams - Astronomy at West - Stars (HD)'
+  movie_title: '恒星の進化を表すヘルツシュプルング-ラッセル図'
+  contributor: 'kokoko'
+  contributor_comment: '天文学者であったヘルツシュプルングとラッセルは、恒星が重力でガスを集め、核融合を開始し、やがて燃料が尽きて、冷えて死んで行くか、白色矮星、中性子星、ブラックホールなどへ進化することを図で示し、これをヘルツシュプルング-ラッセル図と呼ぶ。本動画では、この恒星の一連の進化について紹介する。'
+  rating: 5
+  play_counts: 31
+  size: 17276345
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Hertzsprung-Russell HR Diagrams - Astronomy at West - Stars (HD).mp4'
+  duration: 223.86
+  creation_time: 2013-04-14 01:02:44 +0900
+  bitrate: 617
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 423
+  resolution: '1264x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 10:28:07 +0900
+  updated_at: 2014-02-08 12:03:32 +0900
+
+7:
+  id: 9
+  file_name: 'NASA  A Swift Tour of the Nearest Galaxies in UV Light (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/NASA  A Swift Tour of the Nearest Galaxies in UV Light (HD).mp4'
+  file_basename: 'NASA  A Swift Tour of the Nearest Galaxies in UV Light (HD)'
+  movie_title: 'Swift天体観測衛星が紫外線で観測した地球に最も近いの銀河'
+  contributor: 'kokoko'
+  contributor_comment: ''
+  rating: 4
+  play_counts: 2
+  size: 98504676
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/NASA  A Swift Tour of the Nearest Galaxies in UV Light (HD).mp4'
+  duration: 286.14
+  creation_time: 2013-12-24 20:57:14 +0900
+  bitrate: 2754
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 2559
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 10:41:05 +0900
+  updated_at: 2014-02-06 10:42:24 +0900
+
+8:
+  id: 10
+  file_name: 'NASA  Fermi at Five Years (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/NASA  Fermi at Five Years (HD).mp4'
+  file_basename: 'NASA  Fermi at Five Years (HD)'
+  movie_title: 'ガンマ線天体観測衛星Fermi(GLAST)の打ち上げから5年の観測成果'
+  contributor: 'kokoko'
+  contributor_comment: 'ガンマ線天体観測衛星Fermi(GLAST)は'
+  rating: 5
+  play_counts: 12
+  size: 79388300
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/NASA  Fermi at Five Years (HD).mp4'
+  duration: 318.23
+  creation_time: 2013-12-10 17:41:12 +0900
+  bitrate: 1995
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 1801
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 10:50:03 +0900
+  updated_at: 2014-02-07 15:51:08 +0900
+
+9:
+  id: 11
+  file_name: 'NASA  Fermi Finds Radio Bursts from Terrestrial Gamma-ray Flashes (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/NASA  Fermi Finds Radio Bursts from Terrestrial Gamma-ray Flashes (HD).mp4'
+  file_basename: 'NASA  Fermi Finds Radio Bursts from Terrestrial Gamma-ray Flashes (HD)'
+  movie_title: 'ガンマ線天体観測衛星Fermi(GLAST)が地球のガンマ線閃光から電波を爆発的に放射していることを発見した'
+  contributor: 'kokoko'
+  contributor_comment: ''
+  rating: 4
+  play_counts: 3
+  size: 57454438
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/NASA  Fermi Finds Radio Bursts from Terrestrial Gamma-ray Flashes (HD).mp4'
+  duration: 221.47
+  creation_time: 2012-12-05 14:54:56 +0900
+  bitrate: 2075
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 1880
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 11:03:33 +0900
+  updated_at: 2014-02-06 11:05:17 +0900
+
+10:
+  id: 12
+  file_name: 'Planck Exposes Ancient Light of Our Universe (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Planck Exposes Ancient Light of Our Universe (HD).mp4'
+  file_basename: 'Planck Exposes Ancient Light of Our Universe (HD)'
+  movie_title: 'Planck衛星が古代の宇宙の光を検出'
+  contributor: 'kokoko'
+  contributor_comment: ''
+  rating: 5
+  play_counts: 1
+  size: 10596005
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Planck Exposes Ancient Light of Our Universe (HD).mp4'
+  duration: 58.4
+  creation_time: 2013-03-20 14:56:36 +0900
+  bitrate: 1451
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 1259
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 11:06:31 +0900
+  updated_at: 2014-02-06 11:06:31 +0900
+
+11:
+  id: 13
+  file_name: 'Radio astronomy SKA-era interferometry and other challenges (Low).flv'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Radio astronomy SKA-era interferometry and other challenges (Low).flv'
+  file_basename: 'Radio astronomy SKA-era interferometry and other challenges (Low)'
+  movie_title: '電波望遠鏡群Square Kilometre Array(SKA)時代の科学的挑戦'
+  contributor: 'kokoko'
+  contributor_comment: 'Square Kilometre Array(SKA)とはオーストラリアと南アフリカに設置された電波望遠鏡の集合体のことである。各電波望遠鏡の観測電波を合成し、総面積を稼ぐ方法によって、1平方キロメートル相当の合成開口面積の観測が可能であり、この電波望遠鏡群を用いて将来、何が観測でき、どのような科学上の成果が期待できるか、何に挑戦するのかを講演する。'
+  rating: 3
+  play_counts: 4
+  size: 64448427
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Radio astronomy SKA-era interferometry and other challenges (Low).flv'
+  duration: 2491.82
+  creation_time:
+  bitrate: 206
+  video_codec: 'flv1'
+  colorspace: 'yuv420p'
+  video_bitrate:
+  resolution: '426x240'
+  audio_codec: 'mp3'
+  audio_channels: '2'
+  audio_bitrate: 64
+  audio_sample_rate: 22050
+  created_at: 2014-02-06 11:07:29 +0900
+  updated_at: 2014-02-06 11:16:05 +0900
+
+12:
+  id: 14
+  file_name: 'Spitzer Space Telescope 10 Years of Innovation (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Spitzer Space Telescope 10 Years of Innovation (HD).mp4'
+  file_basename: 'Spitzer Space Telescope 10 Years of Innovation (HD)'
+  movie_title: '赤外線天文観測衛星Spitzerによる10年間の観測の成果'
+  contributor: 'kokoko'
+  contributor_comment: ''
+  rating: 5
+  play_counts: 1
+  size: 29440636
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Spitzer Space Telescope 10 Years of Innovation (HD).mp4'
+  duration: 150.26
+  creation_time: 2013-09-13 12:21:44 +0900
+  bitrate: 1567
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 1373
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 11:17:04 +0900
+  updated_at: 2014-02-06 11:17:04 +0900
+
+13:
+  id: 15
+  file_name: 'The Deep Space Network 50 years of Interplanetary WiFi (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/The Deep Space Network 50 years of Interplanetary WiFi (HD).mp4'
+  file_basename: 'The Deep Space Network 50 years of Interplanetary WiFi (HD)'
+  movie_title: '惑星間のような深宇宙への通信の50年'
+  contributor: 'kokoko'
+  contributor_comment: ''
+  rating: 5
+  play_counts: 2
+  size: 47050024
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/The Deep Space Network 50 years of Interplanetary WiFi (HD).mp4'
+  duration: 167.83
+  creation_time: 2013-12-22 15:20:35 +0900
+  bitrate: 2242
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 2047
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 11:21:15 +0900
+  updated_at: 2014-02-06 11:22:25 +0900
+
+14:
+  id: 16
+  file_name: 'Voyager Reaches Interstellar Space (HD).mp4'
+  local_file_path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Voyager Reaches Interstellar Space (HD).mp4'
+  file_basename: 'Voyager Reaches Interstellar Space (HD)'
+  movie_title: '惑星探査機Voyagerが太陽圏を脱出し恒星間空間に到達した'
+  contributor: 'kokoko'
+  contributor_comment: ''
+  rating: 5
+  play_counts: 2
+  size: 27726454
+  path: '/Users/kosekiyuu/work/moviescatalog/app/assets/videos/Voyager Reaches Interstellar Space (HD).mp4'
+  duration: 128.8
+  creation_time: 2013-12-06 04:01:57 +0900
+  bitrate: 1722
+  video_codec: 'h264 (High) (avc1 / 0x31637661)'
+  colorspace: 'yuv420p'
+  video_bitrate: 1528
+  resolution: '1280x720'
+  audio_codec: 'aac (mp4a / 0x6134706D)'
+  audio_channels: '2'
+  audio_bitrate:
+  audio_sample_rate: 44100
+  created_at: 2014-02-06 11:23:06 +0900
+  updated_at: 2014-02-06 11:23:34 +0900
