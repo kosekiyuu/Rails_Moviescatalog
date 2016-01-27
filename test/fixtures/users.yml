@@ -1,0 +1,38 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+0:
+  id: 1
+  email: 'mamama@mail.com'
+  encrypted_password: '$2a$10$3A7.2OKTf2MJkWLjE00wQ.rYUnvRq1AcvWUcffvSuWuWDs75.iExq'
+  reset_password_token:
+  reset_password_sent_at:
+  remember_created_at:
+  sign_in_count: 3
+  current_sign_in_at: 2014-02-09 17:43:48 +0900
+  last_sign_in_at: 2014-02-07 15:46:35 +0900
+  current_sign_in_ip: '127.0.0.1'
+  last_sign_in_ip: '127.0.0.1'
+  created_at: 2014-02-06 08:09:28 +0900
+  updated_at: 2014-02-09 17:43:48 +0900
+  contributor: 'mamama'
+
+1:
+  id: 2
+  email: 'kokoko@mail.com'
+  encrypted_password: '$2a$10$OvkiqV6xw7z5PaurDA3diOmQ3u4KNpSjLuPPrkxpzvf5wg5gDze/6'
+  reset_password_token:
+  reset_password_sent_at:
+  remember_created_at:
+  sign_in_count: 2
+  current_sign_in_at: 2014-02-07 16:37:04 +0900
+  last_sign_in_at: 2014-02-06 10:24:15 +0900
+  current_sign_in_ip: '127.0.0.1'
+  last_sign_in_ip: '127.0.0.1'
+  created_at: 2014-02-06 10:24:15 +0900
+  updated_at: 2014-02-07 16:37:04 +0900
+  contributor: 'kokoko'

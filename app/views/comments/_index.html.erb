@@ -1,0 +1,24 @@
+
+<br>
+
+<% @movie.comment_threads.each do |comment| %>
+    <table border="0" width="450" style="word-break: break-all; margin: 0 auto;" >
+
+        <tr><td><b>
+        <%= comment.created_at.strftime("%Y/%m/%d %H:%M:%S") %>
+        <%= comment.user.contributor %>
+
+        <% if current_user %>
+        <% if (comment.user.contributor == current_user.contributor) %>
+            <%= link_to("コメント削除", [@movie, comment], {:confirm=>"コメントを削除してもよろしいですか？", :method=>:delete} ) %>
+        <% end %>
+        <% end %>
+        </b></td></tr>
+
+        <tr><td><%= comment.body %></td></tr>
+        <tr><td><hr></td></tr>
+    </table>
+<% end %>
+
+<br>
+<br>

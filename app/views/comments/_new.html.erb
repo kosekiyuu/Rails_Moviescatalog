@@ -1,0 +1,7 @@
+
+<%=form_for [commentable, Comment.new], :remote => false do |f|%>
+    <%= f.hidden_field :commentable_id, :value=> @movie.id %>
+    <strong><%= f.label :new_comment %></strong><br/>
+    <%= f.text_area :body, :style=>"width:450px;height:80px" %><br/>
+    <%= f.submit "Add comment" %>
+<% end %>

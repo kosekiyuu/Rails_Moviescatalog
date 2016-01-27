@@ -1,0 +1,29 @@
+
+
+<table border="0" width="100%">
+<tr><td width="510px" valign="top">
+
+    <h2>あなたのユーザープロフィール</h2>
+    <table border="0" style="margin: 0 auto;" >
+    <tr><th>ユーザー名</th><td><%= current_user.contributor %></td></tr>
+    <tr><th>メールアドレス</th><td><%= current_user.email %></td></tr>
+    <tr><th>ユーザー登録した日時</th><td><%= current_user.created_at.strftime("%Y/%m/%d %H:%M:%S") %></td></tr>
+    <tr><th>あなたの投稿した動画数</th><td><%= @movies.total_count %></td></tr>
+
+    <tr><th>今回ログインした日時</th><td><%= current_user.current_sign_in_at.strftime("%Y/%m/%d %H:%M:%S") %></td></tr>
+    <tr><th>前回ログインした日時</th><td><%= current_user.last_sign_in_at.strftime("%Y/%m/%d %H:%M:%S") %></td></tr>
+    </table>
+
+    <%= link_to 'ユーザープロフィール変更', edit_user_registration_path %>
+
+
+
+
+</td><td width="20px" valign="top"></td>
+<td width="590px" valign="top">
+
+    <h2>あなたの投稿した動画</h2>
+    <%= render :partial => 'movies/movieslist_pagination', :locals => {:movies => @movies, :turnning => true} %>
+
+</td></tr>
+</table>
