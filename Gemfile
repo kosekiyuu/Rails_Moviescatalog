@@ -37,8 +37,7 @@ gem 'anjlab-bootstrap-rails',
 =end
 
 gem 'kaminari', '0.15.1'
-gem 'streamio-ffmpeg', '2.0.0'
-#'1.0.0'
+gem 'streamio-ffmpeg', '1.0.0'
 gem 'devise', '3.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

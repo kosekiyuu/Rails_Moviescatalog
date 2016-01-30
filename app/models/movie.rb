@@ -17,7 +17,9 @@ class Movie < ActiveRecord::Base
     scope :longer_duration_sort, -> { order('duration desc') }
     scope :shorter_duration_sort, -> { order('duration asc') }
 
-    FFMPEG.ffmpeg_binary = "/usr/local/bin/ffmpeg"
+    FFMPEG.ffmpeg_binary = "/usr/bin/ffmpeg"
+    #{ }"/usr/local/bin/ffmpeg"
+    # FFMPEG.ffprobe_binary = "/usr/local/bin/ffprobe"
 
     validates :movie_title, presence: true, length: { in: 10..100 }
 
