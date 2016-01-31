@@ -37,12 +37,8 @@ gem 'anjlab-bootstrap-rails',
 =end
 
 gem 'kaminari', '0.15.1'
-<<<<<<< HEAD
-gem 'streamio-ffmpeg', '2.0.0'
-#'1.0.0'
-=======
 gem 'streamio-ffmpeg', '1.0.0'
->>>>>>> Delete_unnecessary_files
+
 gem 'devise', '3.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
