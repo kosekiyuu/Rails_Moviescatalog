@@ -17,15 +17,11 @@ class Movie < ActiveRecord::Base
     scope :longer_duration_sort, -> { order('duration desc') }
     scope :shorter_duration_sort, -> { order('duration asc') }
 
-<<<<<<< HEAD
-    FFMPEG.ffmpeg_binary = `which ffmpeg`
-    # "/usr/local/bin/ffmpeg"
-=======
+
     FFMPEG.ffmpeg_binary = "/usr/local/bin/ffmpeg"
     # "/usr/bin/ffmpeg"
-
     # FFMPEG.ffprobe_binary = "/usr/local/bin/ffprobe"
->>>>>>> Delete_unnecessary_files
+
 
     validates :movie_title, presence: true, length: { in: 10..100 }
 
@@ -87,44 +83,16 @@ class Movie < ActiveRecord::Base
         end
 
 
-<<<<<<< HEAD
-logger.error(upload_movie.present?)
-logger.error(upload_movie.tempfile.size)
-logger.error(upload_movie.class)
-
-File.chmod(0777, upload_movie.tempfile.path)
-logger.error(upload_movie.tempfile.path)
-logger.error(FFMPEG::Movie.new(upload_movie.tempfile.path))
-logger.error(FFMPEG::Movie.new(upload_movie.tempfile.path).valid?)
-
-
-        if upload_movie.present? && upload_movie.tempfile.size > 0 && upload_movie.class==ActionDispatch::Http::UploadedFile
-
-                temporary_movie_filename = File.join(Rails.root, "tmp", "#{Time.now.strftime("%Y%m%d_%H%M%S")}_#{SecureRandom.hex(32)}")
-                #File.binwrite(temporary_movie_filename, upload_movie.tempfile.read)
-                FileUtils.cp(upload_movie.tempfile.path, temporary_movie_filename)
-                File.chmod(0777, temporary_movie_filename)
-                temp_movie = FFMPEG::Movie.new(temporary_movie_filename)
-                logger.error(temp_movie.inspect)
-
-
-                if ["h264", "vp8", "flv1", "vp6f"].map{|i| temp_movie.video_codec.include?(i)}.any?
-=======
         if upload_movie.present? && upload_movie.tempfile.size > 0 && upload_movie.class==ActionDispatch::Http::UploadedFile
                 temp_movie = FFMPEG::Movie.new(upload_movie.tempfile.path)
 
                 if temp_movie.valid?
->>>>>>> Delete_unnecessary_files
                         new_mp4_filename = "movie_#{Time.now.strftime("%Y%m%d_%H%M%S")}_#{SecureRandom.hex(32)}.mp4"
                         new_mp4_filepath = File.join(Rails.root, MOVIES_SAVE_PATH, new_mp4_filename)
 
                         if temp_movie.video_codec.include?("h264")
                             # mp4(h264)形式である場合はそのままTempファイルの動画をコピー
-<<<<<<< HEAD
-                            FileUtils.cp(temporary_movie_filename, new_mp4_filepath)
-=======
                             FileUtils.cp(upload_movie.tempfile.path, new_mp4_filepath)
->>>>>>> Delete_unnecessary_files
                             FileUtils.chmod(0644, new_mp4_filepath)
                         else
                             # mp4(h264)形式でない場合はmp4(h264)形式へ変換
